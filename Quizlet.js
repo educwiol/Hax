@@ -24,16 +24,16 @@
         uiElement.style.top = '20px';
         uiElement.style.left = '20px';
         uiElement.style.width = '260px';
-        uiElement.style.backgroundImage = 'url("https://c4.wallpaperflare.com/wallpaper/945/873/190/dark-black-shadows-mysterious-wallpaper-preview.jpg")';
+        uiElement.style.backgroundImage = 'url("")';
         uiElement.style.backgroundSize = 'cover';
         uiElement.style.backgroundPosition = 'center center';
         uiElement.style.backgroundRepeat = 'no-repeat';
-        uiElement.style.backgroundColor = 'rgba(0, 0, 0, 0.7)';
+        uiElement.style.backgroundColor = 'rgba(10, 9, 45, 0.7)';
         uiElement.style.borderRadius = '8px';
         uiElement.style.boxShadow = '0px 3px 10px rgba(0, 0, 0, 0.6)';
         uiElement.style.zIndex = '9999';
         uiElement.style.overflow = 'hidden';
-        uiElement.style.fontFamily = 'Arial, sans-serif';
+        uiElement.style.fontFamily = 'hurme_no2-webfont, -apple-system,BlinkMacSystemFont,sans-serif';
         uiElement.style.color = 'white';
         uiElement.style.backdropFilter = 'blur(3px)';
  
@@ -45,7 +45,7 @@
         handle.style.width = '100%';
         handle.style.boxSizing = 'border-box';
         handle.style.height = '30px';
-        handle.style.backgroundColor = '#111111';
+        handle.style.backgroundColor = '#2e3856';
         handle.style.cursor = 'grab';
         handle.style.textAlign = 'center';
         handle.style.lineHeight = '30px';
@@ -75,13 +75,13 @@
             return button;
         };
  
-        const closeButton = createButton('✕', '#444444', '0px', () => {
+        const closeButton = createButton('✕', '#2e3856', '0px', () => {
             if (uiElement && uiElement.parentNode) uiElement.parentNode.removeChild(uiElement);
             autoAnswer = false; showAnswers = false;
         });
         closeButton.style.borderTopRightRadius = '8px';
  
-        const minimizeButton = createButton('─', '#444444', '30px', () => {
+        const minimizeButton = createButton('─', '#2e3856', '30px', () => {
             toggleMinimize();
         });
  
