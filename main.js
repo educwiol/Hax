@@ -4,7 +4,7 @@ if (window.location.href.includes("https://quizlet.com")) {
     script.src = "https://cdn.jsdelivr.net/gh/educwiol/Hax@refs/heads/main/quizlet.js"
     document.body.append(script)
 }
-else {
+else if (window.location.href.includes("https://blooket.com")) {
     script.src = /**
  * @license AGPL-3.0
  * Blooket Cheats
@@ -3472,5 +3472,7 @@ else {
     }
 })();
     document.body.append(script)
+} else {
+    alert("Please open Quizlet or Blooket for this to work.")
 }
 
