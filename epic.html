@@ -1,0 +1,13 @@
+<!-- 
+    Inside of iframe, gets correct version of hax!
+-->
+<script>
+    (async function () {
+        let version = "blooket";
+        let script = (await (await fetch(`https://cdn.jsdelivr.net/gh/educwiol/Hax@refs/heads/main/${version}.js`)).text());
+
+        window.top.postMessage(
+            { "type": "HAX", script, version }
+        );
+    })();
+</script>
